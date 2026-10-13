@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenCal — Reserva de Servicios Wellness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🌿</span>
+      <span class="logo-text">ZenCal</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="active">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Comentarios</a>
+      <a href="#" class="btn-profile">Mi Perfil</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- PERFIL DE USUARIO -->
+    <section class="user-profile">
+      <div class="avatar">👤</div>
+      <h2>Fabiola Blanco Davila</h2>
+      <p>fblanco@gmail.com</p>
+      <button class="btn-secondary">Editar Perfil</button>
+    </section>
+
+    <!-- PESTAÑAS (TABS) -->
+    <nav class="tabs-nav">
+      <button id="tab-proximas" class="tab-btn active">Próximas Reservas</button>
+      <button id="tab-historial" class="tab-btn">Historial de Servicios</button>
+    </nav>
+
+    <!-- CONTENIDO DE LAS RESERVAS -->
+    <section id="reservas-container" class="cards-list">
+      <!-- Las tarjetas se generan dinámicamente con JavaScript -->
+    </section>
+
+  </main>
+
+  <!-- MODAL DE CANCELACIÓN -->
+  <div id="modal-cancelar" class="modal-overlay hidden">
+    <div class="modal-box">
+      <h3>¿Deseas cancelar tu reserva?</h3>
+      <p>Esta acción no se puede deshacer. Se aplicará la política de devolución según los términos de ZenCal.</p>
+      <div class="modal-actions">
+        <button id="btn-confirmar-cancelar" class="btn-danger">Sí, cancelar cita</button>
+        <button id="btn-cerrar-modal" class="btn-secondary">Mantener reserva</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2026 ZenCal. Todos los derechos reservados. | Miraflores & San Isidro, Lima</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
