@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenCal — Inicio</title>
+  <title>ZenCal — Plataforma de Bienestar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ENCABEZADO CON NAVEGACIÓN INTERACTIVA -->
+  <!-- NAVEGACIÓN GLOBAL (Flujos Figma) -->
   <header class="navbar">
     <div class="logo">
       <span class="logo-icon">🌿</span>
@@ -16,30 +16,50 @@
     </div>
     <nav class="nav-links">
       <a href="index.html" class="active">Inicio</a>
-      <a href="#servicios">Servicios</a>
+      <a href="index.html#sedes">Sedes</a>
+      <a href="index.html#servicios">Servicios</a>
       <a href="comentarios.html">Comentarios</a>
-      <a href="perfil.html">Mi Perfil</a>
+      <a href="perfil.html" class="btn-profile">Mi Perfil</a>
     </nav>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container">
+    
+    <!-- Pantalla 1: Hero / Bienvenida -->
     <section class="hero">
       <h1>Encuentra tu equilibrio y bienestar</h1>
-      <p>Reserva masajes, clases de yoga y terapias relajantes en nuestros centros exclusivos de Miraflores y San Isidro.</p>
-      <a href="#servicios" class="btn-secondary">Explorar Servicios</a>
+      <p>Reserva masajes, clases de yoga y terapias holísticas en nuestros centros exclusivos en Lima.</p>
+      <a href="#sedes" class="btn-secondary">Seleccionar Sede</a>
     </section>
 
-    <!-- SECCIÓN DE SERVICIOS -->
-    <section id="servicios" class="services-section">
-      <h2 style="text-align: center; margin-bottom: 25px; color: #1b3a2a;">Nuestros Servicios</h2>
+    <!-- Pantalla 2 y 3: Selección de Sedes (Miraflores / San Isidro) -->
+    <section id="sedes" class="section-block">
+      <h2>Nuestras Sedes en Lima</h2>
+      <div class="cards-grid">
+        <div class="card-sede">
+          <h3>Miraflores</h3>
+          <p>Av. Larco 450 — Ambiente enfocado en relajación profunda y aromaterapia.</p>
+          <a href="#servicios" class="btn-secondary">Ver Servicios en Miraflores</a>
+        </div>
+        <div class="card-sede">
+          <h3>San Isidro</h3>
+          <p>Calle Los Pinos 210 — Espacio moderno especializado en yoga y fisioterapia.</p>
+          <a href="#servicios" class="btn-secondary">Ver Servicios en San Isidro</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pantalla 4 a 10: Catálogo de Servicios y Detalles -->
+    <section id="servicios" class="section-block">
+      <h2>Catálogo de Servicios Wellness</h2>
       <div class="cards-list">
         
         <div class="card">
           <div class="card-info">
             <h3>Masaje Relajante Descontracturante</h3>
-            <p><strong>Ubicación:</strong> Centro Wellness — Miraflores, Lima</p>
-            <p><strong>Duración:</strong> 60 minutos | <strong>Precio:</strong> S/ 80</p>
+            <p><strong>Ubicación:</strong> Miraflores / San Isidro</p>
+            <p><strong>Duración:</strong> 60 min | <strong>Precio:</strong> S/ 80</p>
             <span class="badge confirmada">Disponible</span>
           </div>
           <div class="card-actions">
@@ -49,9 +69,21 @@
 
         <div class="card">
           <div class="card-info">
-            <h3>Clase de Yoga Guiada</h3>
-            <p><strong>Ubicación:</strong> Centro Wellness — San Isidro, Lima</p>
-            <p><strong>Duración:</strong> 45 minutos | <strong>Precio:</strong> S/ 50</p>
+            <h3>Clase de Yoga Guiada (Hatha & Vinyasa)</h3>
+            <p><strong>Ubicación:</strong> San Isidro</p>
+            <p><strong>Duración:</strong> 45 min | <strong>Precio:</strong> S/ 50</p>
+            <span class="badge confirmada">Disponible</span>
+          </div>
+          <div class="card-actions">
+            <a href="perfil.html" class="btn-secondary">Reservar Cita</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <h3>Facial Hidratante Profundo</h3>
+            <p><strong>Ubicación:</strong> Miraflores</p>
+            <p><strong>Duración:</strong> 50 min | <strong>Precio:</strong> S/ 70</p>
             <span class="badge confirmada">Disponible</span>
           </div>
           <div class="card-actions">
@@ -61,6 +93,7 @@
 
       </div>
     </section>
+
   </main>
 
   <footer>
