@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenCal — Reserva de Servicios Wellness</title>
+  <title>ZenCal — Tu plataforma de bienestar en Lima</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,54 +15,58 @@
       <span class="logo-text">ZenCal</span>
     </div>
     <nav class="nav-links">
-      <a href="#" class="active">Inicio</a>
-      <a href="#">Servicios</a>
-      <a href="#">Comentarios</a>
-      <a href="#" class="btn-profile">Mi Perfil</a>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#comentarios">Comentarios</a>
+      <a href="perfil.html" class="btn-profile">Mi Perfil</a>
     </nav>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- SECCIÓN HERO / BIENVENIDA -->
   <main class="container">
-
-    <!-- PERFIL DE USUARIO -->
-    <section class="user-profile">
-      <div class="avatar">👤</div>
-      <h2>Fabiola Blanco Davila</h2>
-      <p>fblanco@gmail.com</p>
-      <button class="btn-secondary">Editar Perfil</button>
+    <section class="hero">
+      <h1>Encuentra tu equilibrio y bienestar</h1>
+      <p>Reserva masajes, clases de yoga y terapias relajantes en nuestros centros exclusivos de Miraflores y San Isidro.</p>
+      <a href="#servicios" class="btn-secondary" style="display: inline-block; text-decoration: none; margin-top: 15px;">Explorar Servicios</a>
     </section>
 
-    <!-- PESTAÑAS (TABS) -->
-    <nav class="tabs-nav">
-      <button id="tab-proximas" class="tab-btn active">Próximas Reservas</button>
-      <button id="tab-historial" class="tab-btn">Historial de Servicios</button>
-    </nav>
+    <!-- LISTA DE SERVICIOS DESTACADOS -->
+    <section id="servicios" class="services-section">
+      <h2 style="text-align: center; margin-bottom: 25px; color: #1b3a2a;">Nuestros Servicios Destacados</h2>
+      <div class="cards-list">
+        
+        <div class="card">
+          <div class="card-info">
+            <h3>Masaje Relajante Descontracturante</h3>
+            <p><strong>Ubicación:</strong> Centro Wellness — Miraflores, Lima</p>
+            <p><strong>Duración:</strong> 60 minutos | <strong>Precio:</strong> S/ 80</p>
+            <span class="badge confirmada">Disponible</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-secondary" onclick="alert('Redirigiendo al detalle del servicio...')">Reservar Cita</button>
+          </div>
+        </div>
 
-    <!-- CONTENIDO DE LAS RESERVAS -->
-    <section id="reservas-container" class="cards-list">
-      <!-- Las tarjetas se generan dinámicamente con JavaScript -->
-    </section>
+        <div class="card">
+          <div class="card-info">
+            <h3>Clase de Yoga Guiada</h3>
+            <p><strong>Ubicación:</strong> Centro Wellness — San Isidro, Lima</p>
+            <p><strong>Duración:</strong> 45 minutos | <strong>Precio:</strong> S/ 50</p>
+            <span class="badge confirmada">Disponible</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-secondary" onclick="alert('Redirigiendo al detalle del servicio...')">Reservar Cita</button>
+          </div>
+        </div>
 
-  </main>
-
-  <!-- MODAL DE CANCELACIÓN -->
-  <div id="modal-cancelar" class="modal-overlay hidden">
-    <div class="modal-box">
-      <h3>¿Deseas cancelar tu reserva?</h3>
-      <p>Esta acción no se puede deshacer. Se aplicará la política de devolución según los términos de ZenCal.</p>
-      <div class="modal-actions">
-        <button id="btn-confirmar-cancelar" class="btn-danger">Sí, cancelar cita</button>
-        <button id="btn-cerrar-modal" class="btn-secondary">Mantener reserva</button>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <!-- PIE DE PÁGINA -->
   <footer>
     <p>&copy; 2026 ZenCal. Todos los derechos reservados. | Miraflores & San Isidro, Lima</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
