@@ -3,102 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenCal — Plataforma de Bienestar</title>
+  <title>ZenCal — Bienestar en Lima</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAVEGACIÓN GLOBAL (Flujos Figma) -->
+  <!-- ENCABEZADO SEMÁNTICO -->
   <header class="navbar">
     <div class="logo">
-      <span class="logo-icon">🌿</span>
-      <span class="logo-text">ZenCal</span>
+      <span>🌿</span>
+      <span>ZenCal</span>
     </div>
     <nav class="nav-links">
       <a href="index.html" class="active">Inicio</a>
-      <a href="index.html#sedes">Sedes</a>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="comentarios.html">Comentarios</a>
-      <a href="perfil.html" class="btn-profile">Mi Perfil</a>
+      <a href="#sedes">Sedes</a>
+      <a href="#servicios">Servicios</a>
+      <a href="perfil.html">Mi Perfil</a>
     </nav>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container">
     
-    <!-- Pantalla 1: Hero / Bienvenida -->
     <section class="hero">
       <h1>Encuentra tu equilibrio y bienestar</h1>
-      <p>Reserva masajes, clases de yoga y terapias holísticas en nuestros centros exclusivos en Lima.</p>
-      <a href="#sedes" class="btn-secondary">Seleccionar Sede</a>
+      <p>Reserva masajes y terapias en Miraflores y San Isidro.</p>
+      <a href="#sedes" class="btn-secondary">Explorar Sedes</a>
     </section>
 
-    <!-- Pantalla 2 y 3: Selección de Sedes (Miraflores / San Isidro) -->
     <section id="sedes" class="section-block">
-      <h2>Nuestras Sedes en Lima</h2>
+      <h2>Nuestras Sedes</h2>
       <div class="cards-grid">
-        <div class="card-sede">
+        <article class="card-sede">
           <h3>Miraflores</h3>
-          <p>Av. Larco 450 — Ambiente enfocado en relajación profunda y aromaterapia.</p>
-          <a href="#servicios" class="btn-secondary">Ver Servicios en Miraflores</a>
-        </div>
-        <div class="card-sede">
+          <p>Av. Larco 450 — Relajación profunda.</p>
+          <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+        </article>
+        <article class="card-sede">
           <h3>San Isidro</h3>
-          <p>Calle Los Pinos 210 — Espacio moderno especializado en yoga y fisioterapia.</p>
-          <a href="#servicios" class="btn-secondary">Ver Servicios en San Isidro</a>
-        </div>
+          <p>Calle Los Pinos 210 — Yoga y salud.</p>
+          <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+        </article>
       </div>
     </section>
 
-    <!-- Pantalla 4 a 10: Catálogo de Servicios y Detalles -->
     <section id="servicios" class="section-block">
-      <h2>Catálogo de Servicios Wellness</h2>
+      <h2>Servicios Destacados</h2>
       <div class="cards-list">
         
-        <div class="card">
+        <article class="card">
           <div class="card-info">
-            <h3>Masaje Relajante Descontracturante</h3>
-            <p><strong>Ubicación:</strong> Miraflores / San Isidro</p>
+            <h3>Masaje Relajante</h3>
+            <p><strong>Ubicación:</strong> Miraflores</p>
             <p><strong>Duración:</strong> 60 min | <strong>Precio:</strong> S/ 80</p>
             <span class="badge confirmada">Disponible</span>
           </div>
-          <div class="card-actions">
-            <a href="perfil.html" class="btn-secondary">Reservar Cita</a>
+          <div>
+            <button class="btn-reservar" data-servicio="Masaje Relajante">Reservar Cita</button>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <div class="card-info">
-            <h3>Clase de Yoga Guiada (Hatha & Vinyasa)</h3>
+            <h3>Clase de Yoga</h3>
             <p><strong>Ubicación:</strong> San Isidro</p>
             <p><strong>Duración:</strong> 45 min | <strong>Precio:</strong> S/ 50</p>
             <span class="badge confirmada">Disponible</span>
           </div>
-          <div class="card-actions">
-            <a href="perfil.html" class="btn-secondary">Reservar Cita</a>
+          <div>
+            <button class="btn-reservar" data-servicio="Clase de Yoga">Reservar Cita</button>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-info">
-            <h3>Facial Hidratante Profundo</h3>
-            <p><strong>Ubicación:</strong> Miraflores</p>
-            <p><strong>Duración:</strong> 50 min | <strong>Precio:</strong> S/ 70</p>
-            <span class="badge confirmada">Disponible</span>
-          </div>
-          <div class="card-actions">
-            <a href="perfil.html" class="btn-secondary">Reservar Cita</a>
-          </div>
-        </div>
+        </article>
 
       </div>
     </section>
 
   </main>
 
+  <!-- PIE DE PÁGINA SEMÁNTICO -->
   <footer>
-    <p>&copy; 2026 ZenCal. Todos los derechos reservados. | Miraflores & San Isidro, Lima</p>
+    <p>&copy; 2026 ZenCal. Todos los derechos reservados. | Lima, Perú</p>
   </footer>
 
+  <!-- SCRIPT JS INTERACTIVO -->
+  <script src="script.js" defer></script>
 </body>
 </html>
